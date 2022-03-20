@@ -1,0 +1,119 @@
+Last login: Wed Feb 16 18:29:53 on ttys000
+christopheralfaro321@Chriss-MacBook-Pro ~ % ping www.lacnic.net
+PING www.lacnic.net (200.3.14.184): 56 data bytes
+64 bytes from 200.3.14.184: icmp_seq=0 ttl=45 time=250.152 ms
+64 bytes from 200.3.14.184: icmp_seq=1 ttl=45 time=496.469 ms
+64 bytes from 200.3.14.184: icmp_seq=2 ttl=45 time=131.590 ms
+64 bytes from 200.3.14.184: icmp_seq=3 ttl=45 time=173.012 ms
+64 bytes from 200.3.14.184: icmp_seq=4 ttl=45 time=121.487 ms
+^C
+--- www.lacnic.net ping statistics ---
+5 packets transmitted, 5 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 121.487/234.542/496.469/138.576 ms
+christopheralfaro321@Chriss-MacBook-Pro ~ % ping www.afrinic.net
+PING www.afrinic.net (196.216.2.6): 56 data bytes
+64 bytes from 196.216.2.6: icmp_seq=0 ttl=37 time=431.646 ms
+64 bytes from 196.216.2.6: icmp_seq=1 ttl=37 time=361.381 ms
+64 bytes from 196.216.2.6: icmp_seq=2 ttl=37 time=329.743 ms
+^C
+--- www.afrinic.net ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 329.743/374.257/431.646/42.586 ms
+christopheralfaro321@Chriss-MacBook-Pro ~ % ping www.apnic.net
+PING www.apnic.net.cdn.cloudflare.net (104.18.235.68): 56 data bytes
+64 bytes from 104.18.235.68: icmp_seq=0 ttl=52 time=39.194 ms
+64 bytes from 104.18.235.68: icmp_seq=1 ttl=52 time=50.686 ms
+64 bytes from 104.18.235.68: icmp_seq=2 ttl=52 time=73.475 ms
+64 bytes from 104.18.235.68: icmp_seq=3 ttl=52 time=121.966 ms
+^C
+--- www.apnic.net.cdn.cloudflare.net ping statistics ---
+4 packets transmitted, 4 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 39.194/71.330/121.966/31.731 ms
+christopheralfaro321@Chriss-MacBook-Pro ~ % ping
+usage: ping [-AaDdfnoQqRrv] [-c count] [-G sweepmaxsize]
+            [-g sweepminsize] [-h sweepincrsize] [-i wait]
+            [-l preload] [-M mask | time] [-m ttl] [-p pattern]
+            [-S src_addr] [-s packetsize] [-t timeout][-W waittime]
+            [-z tos] host
+       ping [-AaDdfLnoQqRrv] [-c count] [-I iface] [-i wait]
+            [-l preload] [-M mask | time] [-m ttl] [-p pattern] [-S src_addr]
+            [-s packetsize] [-T ttl] [-t timeout] [-W waittime]
+            [-z tos] mcast-group
+Apple specific options (to be specified before mcast-group or host like all options)
+            -b boundif           # bind the socket to the interface
+            -k traffic_class     # set traffic class socket option
+            -K net_service_type  # set traffic class socket options
+            --apple-connect       # call connect(2) in the socket
+            --apple-time          # display current time
+
+christopheralfaro321@Chriss-MacBook-Pro ~ % ping –c 25 www.lacnic.net > lacnic.txt
+usage: ping [-AaDdfnoQqRrv] [-c count] [-G sweepmaxsize]
+            [-g sweepminsize] [-h sweepincrsize] [-i wait]
+            [-l preload] [-M mask | time] [-m ttl] [-p pattern]
+            [-S src_addr] [-s packetsize] [-t timeout][-W waittime]
+            [-z tos] host
+       ping [-AaDdfLnoQqRrv] [-c count] [-I iface] [-i wait]
+            [-l preload] [-M mask | time] [-m ttl] [-p pattern] [-S src_addr]
+            [-s packetsize] [-T ttl] [-t timeout] [-W waittime]
+            [-z tos] mcast-group
+Apple specific options (to be specified before mcast-group or host like all options)
+            -b boundif           # bind the socket to the interface
+            -k traffic_class     # set traffic class socket option
+            -K net_service_type  # set traffic class socket options
+            --apple-connect       # call connect(2) in the socket
+            --apple-time          # display current time
+christopheralfaro321@Chriss-MacBook-Pro ~ % ping –c 25 www.afrinic.net > afrinic.txt
+usage: ping [-AaDdfnoQqRrv] [-c count] [-G sweepmaxsize]
+            [-g sweepminsize] [-h sweepincrsize] [-i wait]
+            [-l preload] [-M mask | time] [-m ttl] [-p pattern]
+            [-S src_addr] [-s packetsize] [-t timeout][-W waittime]
+            [-z tos] host
+       ping [-AaDdfLnoQqRrv] [-c count] [-I iface] [-i wait]
+            [-l preload] [-M mask | time] [-m ttl] [-p pattern] [-S src_addr]
+            [-s packetsize] [-T ttl] [-t timeout] [-W waittime]
+            [-z tos] mcast-group
+Apple specific options (to be specified before mcast-group or host like all options)
+            -b boundif           # bind the socket to the interface
+            -k traffic_class     # set traffic class socket option
+            -K net_service_type  # set traffic class socket options
+            --apple-connect       # call connect(2) in the socket
+            --apple-time          # display current time
+christopheralfaro321@Chriss-MacBook-Pro ~ % ping –c 25 www.apnic.net > apnic.txt
+usage: ping [-AaDdfnoQqRrv] [-c count] [-G sweepmaxsize]
+            [-g sweepminsize] [-h sweepincrsize] [-i wait]
+            [-l preload] [-M mask | time] [-m ttl] [-p pattern]
+            [-S src_addr] [-s packetsize] [-t timeout][-W waittime]
+            [-z tos] host
+       ping [-AaDdfLnoQqRrv] [-c count] [-I iface] [-i wait]
+            [-l preload] [-M mask | time] [-m ttl] [-p pattern] [-S src_addr]
+            [-s packetsize] [-T ttl] [-t timeout] [-W waittime]
+            [-z tos] mcast-group
+Apple specific options (to be specified before mcast-group or host like all options)
+            -b boundif           # bind the socket to the interface
+            -k traffic_class     # set traffic class socket option
+            -K net_service_type  # set traffic class socket options
+            --apple-connect       # call connect(2) in the socket
+            --apple-time          # display current time
+christopheralfaro321@Chriss-MacBook-Pro ~ % man ls *.txt
+
+     IEEE Std 1003.1-2001 (“POSIX.1”) and IEEE Std 1003.1-2008 (“POSIX.1”).  The
+     options -B, -D, -G, -I, -T, -U, -W, -Z, -b, -h, -w, -y and -, are non-
+     standard extensions.
+
+     The ACL support is compatible with IEEE Std 1003.2c (“POSIX.2c”) Draft 17
+     (withdrawn).
+
+HISTORY
+     An ls command appeared in Version 1 AT&T UNIX.
+
+BUGS
+     To maintain backward compatibility, the relationships between the many
+     options are quite complex.
+
+     The exception mentioned in the -s option description might be a feature
+     that was based on the fact that single-column output usually goes to
+     something other than a terminal.  It is debatable whether this is a design
+     bug.
+
+     IEEE Std 1003.2 (“POSIX.2”) mandates opposite sort orders for files with
+     the same timestamp when sorting with the -t option.

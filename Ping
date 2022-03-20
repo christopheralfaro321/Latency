@@ -45,7 +45,6 @@ Apple specific options (to be specified before mcast-group or host like all opti
             -K net_service_type  # set traffic class socket options
             --apple-connect       # call connect(2) in the socket
             --apple-time          # display current time
-
 christopheralfaro321@Chriss-MacBook-Pro ~ % ping –c 25 www.lacnic.net > lacnic.txt
 usage: ping [-AaDdfnoQqRrv] [-c count] [-G sweepmaxsize]
             [-g sweepminsize] [-h sweepincrsize] [-i wait]

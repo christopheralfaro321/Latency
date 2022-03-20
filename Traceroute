@@ -1,0 +1,16 @@
+3.	christopheralfaro321@Chriss-MacBook-Pro ~ % traceroute www.lacnic.net > traceroute_lacnic.txt
+4.	traceroute to www.lacnic.net (200.3.14.184), 64 hops max, 52 byte packets
+5.	^C
+6.	christopheralfaro321@Chriss-MacBook-Pro ~ % traceroute www.afrinic.net > traceroute_afrinic.txt
+7.	traceroute to www.afrinic.net (196.216.2.6), 64 hops max, 52 byte packets
+8.	^C
+9.	christopheralfaro321@Chriss-MacBook-Pro ~ % traceroute www.apnic.net > traceroute_apnic.txt
+10.	traceroute: Warning: www.apnic.net has multiple addresses; using 104.18.236.68
+11.	traceroute to www.apnic.net.cdn.cloudflare.net (104.18.236.68), 64 hops max, 52 byte packets
+12.	^C         
+13.	christopheralfaro321@Chriss-MacBook-Pro ~ % traceroute -4 www.apnic.net > traceroute_apnic.txt
+14.	Version 1.4a12+Darwin
+15.	Usage: traceroute [-adDeFInrSvx] [-A as_server] [-f first_ttl] [-g gateway] [-i iface]
+16.		[-M first_ttl] [-m max_ttl] [-p port] [-P proto] [-q nqueries] [-s src_addr]
+17.		[-t tos] [-w waittime] [-z pausemsecs] host [packetlen]
+

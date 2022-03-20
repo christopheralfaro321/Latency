@@ -13,4 +13,3 @@
 15.	Usage: traceroute [-adDeFInrSvx] [-A as_server] [-f first_ttl] [-g gateway] [-i iface]
 16.		[-M first_ttl] [-m max_ttl] [-p port] [-P proto] [-q nqueries] [-s src_addr]
 17.		[-t tos] [-w waittime] [-z pausemsecs] host [packetlen]
-

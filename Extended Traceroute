@@ -1,0 +1,28 @@
+19.	christopheralfaro321@Chriss-MacBook-Pro ~ % traceroute -d www.lacnic.net
+20.	traceroute to www.lacnic.net (200.3.14.184), 64 hops max, 52 byte packets
+21.	 1  192.168.1.1 (192.168.1.1)  11.617 ms  7.683 ms  6.346 ms
+22.	 2  * * *
+23.	 3  b3378.nycmny-lcr-22.verizon-gni.net (100.41.216.110)  18.010 ms  11.316 ms
+24.	    b3378.nycmny-lcr-21.verizon-gni.net (100.41.216.108)  11.929 ms
+25.	 4  * * *
+26.	 5  0.ae1.br2.nyc4.alter.net (140.222.229.91)  18.341 ms
+27.	    0.ae2.br2.nyc4.alter.net (140.222.229.93)  10.714 ms
+28.	    0.ae1.br2.nyc4.alter.net (140.222.229.91)  10.296 ms
+29.	 6  verizon-com.customer.alter.net (152.179.78.154)  10.395 ms  10.272 ms  11.949 ms
+30.	^C
+31.	christopheralfaro321@Chriss-MacBook-Pro ~ % traceroute -d www.afrinic.net 
+32.	traceroute to www.afrinic.net (196.216.2.6), 64 hops max, 52 byte packets
+33.	 1  192.168.1.1 (192.168.1.1)  7.731 ms  6.139 ms  5.949 ms
+34.	 2  * * *
+35.	 3  b3378.nycmny-lcr-22.verizon-gni.net (100.41.216.110)  17.738 ms
+36.	    b3378.nycmny-lcr-21.verizon-gni.net (100.41.216.108)  10.056 ms
+37.	    b3378.nycmny-lcr-22.verizon-gni.net (100.41.216.110)  11.546 ms
+38.	^C
+39.	christopheralfaro321@Chriss-MacBook-Pro ~ % traceroute -d www.apnic.net 
+40.	traceroute: Warning: www.apnic.net has multiple addresses; using 104.18.235.68
+41.	traceroute to www.apnic.net.cdn.cloudflare.net (104.18.235.68), 64 hops max, 52 byte packets
+42.	 1  192.168.1.1 (192.168.1.1)  7.121 ms  5.759 ms  5.959 ms
+43.	 2  * * *
+44.	 3  b3378.nycmny-lcr-22.verizon-gni.net (100.41.216.110)  18.721 ms  13.280 ms
+45.	    b3378.nycmny-lcr-21.verizon-gni.net (100.41.216.108)  11.966 ms
+46.	 4  *^C
